@@ -1,0 +1,97 @@
+user_name = input("Please enter your name: ")
+welcome = "Welcome, " + user_name + "!"
+
+print(welcome)
+print("Cocktail Mixology Guide")
+
+sorry = str("Sorry, you are unable to use our app!")
+nice = str("Nice! Let's get started!")
+
+birth_year = input("Please enter your birth year: ")
+user_age = 2021 - int(birth_year)
+
+print("Age: " + str(user_age))
+
+if user_age >= 21:
+    print(nice)
+elif 18 < user_age < 21:
+    response = input("Are you a server or bartender? (1) for Yes and (2) for No ")
+    if int(response) == 1:
+        print(nice)
+    elif int(response) == 2:
+        print(sorry)
+    else:    #TROUBLESHOOT THIS#
+        print("You must pick a valid option")
+elif user_age < 19:
+    print(sorry)
+
+print("Main Menu")
+
+drink_nav_1 = input('Select option to continue: (1) Liquor Menu , (2) Liqueur Menu , (3) Juice/Mixer Menu , (4)Glossary ')
+end = ("End of the Line!")
+user_list = [""] #IS THIS CORRECT? #
+
+# FOR OPTION 1 #
+
+if int(drink_nav_1) == 1:
+    print("Liquor Menu")
+    drink_nav_1_1 = input("Select your ingredients! (1)Vodka , (2)Tequila , (3)Rum , (4)Bourbon/Whiskey ")
+    if int(drink_nav_1_1) == 1:
+        print("Vodka Menu")
+        print(end)
+    elif int(drink_nav_1_1) == 2:
+        print("Tequila Menu")
+        print(end)
+    elif int(drink_nav_1_1) == 3:
+        print("Rum Menu")
+        drink_nav_1_3_1 = input("Please select: (1)Dark Rum , (2)Light Rum ")
+        if int(drink_nav_1_3_1) == 1:
+            print("Dark Rum")
+            print(end)
+        elif int(drink_nav_1_3_1) == 2:
+            print("Light Rum")
+            input("Select your ingredients : (1)Bacardi Superior")
+            print(end)
+    if int(drink_nav_1_1) == 4:
+        print("Bourbon/Whiskey Menu")
+        print(end)
+
+# FOR OPTION 2 #
+
+if int(drink_nav_1) == (2):
+    print("Liqueur Menu")
+    drink_nav_1_2 = input("Select your ingredients! (1)Cognac , (2)Brandy , (3)ANOTHER , (4)ANOTHER ")
+    if int(drink_nav_1_2) == 1:
+        print("Cognac Menu")
+        print(end)
+    if int(drink_nav_1_2) == 2:
+        print("Brandy Menu")
+        print(end)
+    if int(drink_nav_1_2) == 3:
+        print("ANOTHER Menu")
+        print(end)
+
+# FOR OPTION 3 #
+
+if int(drink_nav_1) == (3):
+    print("Juice/Mixer Menu")
+    drink_nav_1_3 = input("Select your ingredients! (1)Orange Juice , (2)Pineapple Juice , (3)Apple Juice , (4)Soda/Pop ")
+    if int(drink_nav_1_3) == 1:
+        print("Orange Juice")
+        print(end)
+    if int(drink_nav_1_3) == 2:
+        print("Pineapple Juice")
+        print(end)
+    if int(drink_nav_1_3) == 3:
+        print("Apple Juice")
+        print(end)
+     if int(drink_nav_1_3) == 4:
+        print("Soda/Pop/Cola")
+        print(end)
+
+# FOR OPTION 4 #
+
+if int(drink_nav_1) == (4):
+    print("Glossary")
+    drink_nav_1_4 = print(end)
+    
