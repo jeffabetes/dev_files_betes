@@ -20,3 +20,19 @@ for name in author_names:
   author_last_names.append(name.split()[-1])
   
 print(author_last_names)
+
+
+_____________________________________________________________________________________________________________________________________________
+
+
+# Import random below:
+import random
+
+# Create random_list below:
+random_list = [random.randint(1,100) for i in range(101)]
+
+# Create randomer_number below:
+randomer_number = random.choice(random_list)
+
+# Print randomer_number below:
+print(randomer_number)
