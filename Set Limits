@@ -18,3 +18,4 @@ if data_points >= minimum_points:
 if data_points < minimum_points:
   print("Keep collecting data.")
   
+
