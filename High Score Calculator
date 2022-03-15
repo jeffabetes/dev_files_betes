@@ -1,11 +1,3 @@
-user_added = True
-user = "Becca"
-
-if user_added == False:
-  print(f"Add {user} to database")
-  user_added = True
-print(f"Database has user: {user}")
-
 id_1 = "#4"
 average_grade_1 = "A"
 test_score_1= 90
